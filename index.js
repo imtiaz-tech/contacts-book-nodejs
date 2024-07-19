@@ -44,7 +44,7 @@ mongoose.connect(
     contactModel.findByIdAndDelete({_id:id})
     .then(result=>res.json(result))
     .catch(err=>res.json(err))
-})
+});
 
 app.listen(3001, () => {
     console.log("server is runing")
